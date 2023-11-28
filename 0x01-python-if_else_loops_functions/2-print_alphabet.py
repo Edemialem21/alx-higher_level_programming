@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-char = ord('a')
-while char <= ord('z'):
+char = 97
+while char <= 122:
     print(chr(char), end='')
     char += 1
