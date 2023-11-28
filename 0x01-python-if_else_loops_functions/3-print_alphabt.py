@@ -2,5 +2,5 @@
 char = 97
 while char <= 122:
     if chr(char) != 'q' and chr(char) != 'e':
-        print(chr(char), end='')
+        print("{}".format(chr(char)), end='')
     char += 1
