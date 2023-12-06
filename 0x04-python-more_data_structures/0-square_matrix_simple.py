@@ -5,4 +5,4 @@ def square_matrix_simple(matrix=[]):
     for row in matrix:
         new[index] = [x**2 for x in row]
         index += 1
-    return(new)
+    return new
