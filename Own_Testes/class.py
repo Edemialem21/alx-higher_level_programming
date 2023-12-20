@@ -40,7 +40,24 @@ class Car:
             print("hi my name is " + self.name)
         else:
             print("Hi, I am a brand car without a name")
-z = Car()
-z.heyy()
-w = Car("Age_brand")
-w.heyy()
+x = Car()
+x.heyy()
+y = Car("Age_brand")
+y.heyy()
+
+
+# Data abstraction, Data Encapsualtion and Information hiding
+    # Encapsulation - bundling of data with the methods that operate on the data
+        # encapsulation via methods doesn't mean that the data is hidden, but using the method is recommended to access and seeing the data 
+    # Data Hiding - some internal data are hidden, so that that can't be accidentally changed.
+    # Data Abstraction = Data Encapsulation + Data HIding
+        # getter -  methoda used for the case encapsulation, this methods do not change the value it just return the values
+        # setter - the methods used for changing the values of attribute
+def set_name(self, name):
+    self.name = name
+def get_name(self, name):
+    return self.name
+x.set_name("mozilla")
+x.heyy()
+y.set_name(x.get_name)
+y.heyy()
