@@ -33,16 +33,25 @@ Robot.say_hi(x)  #binding the function "hi" to a class attribute "say_hi"
     # 2. the first parameter in method is self.
 
 class Car:
-    def __init__(self, name=None):
+    def __init__(self, name=None, build_year=None):
         self.name = name
+        self.build_year= build_year
     def heyy(self):
         if self.name:
             print("hi my name is " + self.name)
         else:
             print("Hi, I am a brand car without a name")
+        if self.build_year:
+            print("I was built in " + str(self.build_year))
+        else:
+            print("It's not known, when I was created")
+    def set_name(self, name):
+        self.name = name
+    def get_name(self, name):
+        return self.name
 x = Car()
 x.heyy()
-y = Car("Age_brand")
+y = Car("Age_brand", 2023)
 y.heyy()
 
 
@@ -53,10 +62,7 @@ y.heyy()
     # Data Abstraction = Data Encapsulation + Data HIding
         # getter -  methoda used for the case encapsulation, this methods do not change the value it just return the values
         # setter - the methods used for changing the values of attribute
-def set_name(self, name):
-    self.name = name
-def get_name(self, name):
-    return self.name
+
 x.set_name("mozilla")
 x.heyy()
 y.set_name(x.get_name)
