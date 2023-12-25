@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 def safe_print_integer(value):
+    boole = True
     try:
         print("{:d}".format(value))
-        return True
     except (TypeError ValueError):
-        return False
+        boole = False
+    finally:
+        return boole
