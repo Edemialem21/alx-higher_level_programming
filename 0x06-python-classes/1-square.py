@@ -4,6 +4,7 @@
 contains a class defination with private instance intialization using __self.
 """
 
+
 class Square():
     """
     This is a classs with named Square with creating private instance of size.
