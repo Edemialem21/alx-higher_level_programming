@@ -7,7 +7,8 @@ initialization of private instance using __self and check TypeError and ValueErr
 
 class Square():
     """
-    Square class which creates private instance of size using exception handling in pyhton for TypeError and valueError handling.
+    Square class which creates private instance of size using exception
+    handling in pyhton for TypeError and valueError handling.
     """
 
     def __init__(self, size=0):
