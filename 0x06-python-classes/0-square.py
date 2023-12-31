@@ -3,8 +3,6 @@
 """
 File: 0-square.py
 Desc: contains an empty class defination.
-Author: Edemialem
-Date Created: December 31 2023
 """
 
 
