@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """
-initialization of private instance using __self and check TypeError and ValueError if that is the case it raise an error using error exception.
+initialization of private instance using __self and check TypeError
+and ValueError if that is the case it raise an error using error exception.
 """
 
 
