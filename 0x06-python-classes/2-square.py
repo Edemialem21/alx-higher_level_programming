@@ -5,6 +5,7 @@ initialization of private instance using __self and check TypeError and ValueErr
 """
 
 
+
 class Square():
     """
     Square class which creates private instance of size using exception
