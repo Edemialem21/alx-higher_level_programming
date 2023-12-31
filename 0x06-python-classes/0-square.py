@@ -5,6 +5,8 @@ Desc: this is defining an empty class
 """
 
 class Square():
-    """ defining an empty class of a name Square"""
+    """
+    defining an empty class named Square
+    """
 
     pass
