@@ -6,13 +6,11 @@ and ValueError if that is the case it raise an error using error exception.
 """
 
 
-
 class Square():
     """
-    Square class which creates private instance of size using exception
-    handling in pyhton for TypeError and valueError handling.
+    defination of a private object attribute
+    called size, and checks the attribute if it is integer and positive.
     """
-
     def __init__(self, size=0):
         if isinstance(size, int):
             if size < 0:
