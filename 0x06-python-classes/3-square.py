@@ -8,8 +8,10 @@ and ValueError if that is the case it raise an error using error exception.
 
 class Square():
     """
-    defination of a private attribute called size and public method named area
-    and checks the private attribute if it is integer and positive.
+    defination of a private attribute called size
+    and public method named area
+    and checks the private attribute
+    if it is integer and positive.
     """
     def __init__(self, size=0):
         if isinstance(size, int):
