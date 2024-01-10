@@ -64,11 +64,13 @@ class Rectangle:
         return (2 * (self.width + self.height))
 
     def __str__(self):
-        """ print using string and rep """
+        """function that prints string representation of rectangle class"""
+        rec_string = ""
         if self.width == 0 or self.height == 0:
-            return ''
-        return '\n'.join(['#' * self.width] * self.height)
-
-    def __repr__(self):
-        """ print using repr which is string representation """
-        return f'Rectangle(width={self.__width}, height={self.__height})'
+            return (rec_string)
+        for row in range(self.height):
+            for column in range(self.width):
+                rec_string += "#"
+            rec_string += "\n"
+        rec_string = rec_string[:-1]
+        return (rec_string)
